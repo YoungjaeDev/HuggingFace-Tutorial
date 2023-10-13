@@ -1,0 +1,4 @@
+FROM nvcr.io/nvidia/pytorch:23.03-py3
+
+RUN pip install opencv-python numpy matplotlib tqdm ipykernel
+RUN pip install -q transformers==4.19.2 diffusers==0.14.0 accelerate
